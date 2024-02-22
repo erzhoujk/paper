@@ -1,0 +1,399 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\bibstyle{plainnat}
+\citation{tay2021long}
+\citation{arjovsky2016unitary,erichson2021lipschitz}
+\citation{bai2018empirical,oord2016wavenet}
+\citation{katharopoulos2020transformers,choromanski2020rethinking}
+\citation{tay2021long}
+\citation{gu2021lssl}
+\citation{gu2021lssl}
+\citation{voelker2019legendre,gu2020hippo}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\newlabel{sec:intro@cref}{{[section][1][]1}{[1][1][]1}}
+\citation{gu2021lssl}
+\citation{voelker2019legendre,gu2020hippo}
+\citation{pan2001structured,pan2017fast}
+\citation{dosovitskiy2020image}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces  (\textbf  {Left}) State Space Models (SSM) parameterized by matrices \( \bm  {A}, \bm  {B}, \bm  {C}, \bm  {D} \) map an input signal \( u(t) \) to output \( y(t) \) through a latent state \( x(t) \). (\textbf  {Center}) Recent theory on continuous-time memorization derives special \( \bm  {A} \) matrices that allow SSMs to capture LRDs mathematically and empirically. (\textbf  {Right}) SSMs can be computed either as a recurrence (left) or convolution (right). However, materializing these conceptual views requires utilizing different representations of its parameters (\textcolor {BrickRed}{red}, \textcolor {RoyalBlue}{blue}, \textcolor {ForestGreen}{green}) which are very expensive to compute. S4{} introduces a novel parameterization that efficiently swaps between these representations, allowing it to handle a wide range of tasks, be efficient at both training and inference, and excel at long sequences. \relax }}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:properties}{{1}{2}{(\textbf {Left}) State Space Models (SSM) parameterized by matrices \( \bm {A}, \bm {B}, \bm {C}, \bm {D} \) map an input signal \( u(t) \) to output \( y(t) \) through a latent state \( x(t) \). (\textbf {Center}) Recent theory on continuous-time memorization derives special \( \bm {A} \) matrices that allow SSMs to capture LRDs mathematically and empirically. (\textbf {Right}) SSMs can be computed either as a recurrence (left) or convolution (right). However, materializing these conceptual views requires utilizing different representations of its parameters (\textcolor {BrickRed}{red}, \textcolor {RoyalBlue}{blue}, \textcolor {ForestGreen}{green}) which are very expensive to compute. \methodabbrv {} introduces a novel parameterization that efficiently swaps between these representations, allowing it to handle a wide range of tasks, be efficient at both training and inference, and excel at long sequences. \relax }{figure.caption.1}{}}
+\newlabel{fig:properties@cref}{{[figure][1][]1}{[1][1][]2}}
+\@writefile{toc}{\contentsline {paragraph}{Towards a general-purpose sequence model.}{2}{section*.2}\protected@file@percent }
+\citation{pascanu2013difficulty}
+\citation{gu2020hippo}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background: State Spaces}{3}{section.2}\protected@file@percent }
+\newlabel{sec:background}{{2}{3}{Background: State Spaces}{section.2}{}}
+\newlabel{sec:background@cref}{{[section][2][]2}{[1][3][]3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}State Space Models: A Continuous-time Latent State Model}{3}{subsection.2.1}\protected@file@percent }
+\newlabel{sec:ss-continuous}{{2.1}{3}{State Space Models: A Continuous-time Latent State Model}{subsection.2.1}{}}
+\newlabel{sec:ss-continuous@cref}{{[subsection][1][2]2.1}{[1][3][]3}}
+\newlabel{eq:1}{{1}{3}{State Space Models: A Continuous-time Latent State Model}{equation.2.1}{}}
+\newlabel{eq:1@cref}{{[equation][1][]1}{[1][3][]3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Addressing Long-Range Dependencies with HiPPO}{3}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:ss-memory}{{2.2}{3}{Addressing Long-Range Dependencies with HiPPO}{subsection.2.2}{}}
+\newlabel{sec:ss-memory@cref}{{[subsection][2][2]2.2}{[1][3][]3}}
+\citation{tustin1947method}
+\newlabel{eq:hippo}{{2}{4}{Addressing Long-Range Dependencies with HiPPO}{equation.2.2}{}}
+\newlabel{eq:hippo@cref}{{[equation][2][]2}{[1][4][]4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Discrete-time SSM: The Recurrent Representation}{4}{subsection.2.3}\protected@file@percent }
+\newlabel{sec:ss-recurrent}{{2.3}{4}{Discrete-time SSM: The Recurrent Representation}{subsection.2.3}{}}
+\newlabel{sec:ss-recurrent@cref}{{[subsection][3][2]2.3}{[1][4][]4}}
+\newlabel{eq:2}{{3}{4}{Discrete-time SSM: The Recurrent Representation}{equation.2.3}{}}
+\newlabel{eq:2@cref}{{[equation][3][]3}{[1][4][]4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Training SSMs: The Convolutional Representation}{4}{subsection.2.4}\protected@file@percent }
+\newlabel{sec:ss-convolution}{{2.4}{4}{Training SSMs: The Convolutional Representation}{subsection.2.4}{}}
+\newlabel{sec:ss-convolution@cref}{{[subsection][4][2]2.4}{[1][4][]4}}
+\newlabel{eq:convolution}{{4}{4}{Training SSMs: The Convolutional Representation}{equation.2.4}{}}
+\newlabel{eq:convolution@cref}{{[equation][4][]4}{[1][4][]4}}
+\newlabel{eq:krylov}{{5}{4}{Training SSMs: The Convolutional Representation}{equation.2.5}{}}
+\newlabel{eq:krylov@cref}{{[equation][5][]5}{[1][4][]4}}
+\citation{pan2001structured}
+\citation{gu2021lssl}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Method: Structured State Spaces (S4)}{5}{section.3}\protected@file@percent }
+\newlabel{sec:s4}{{3}{5}{Method: Structured State Spaces (\methodabbrv )}{section.3}{}}
+\newlabel{sec:s4@cref}{{[section][3][]3}{[1][4][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Motivation: Diagonalization}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:s4-motivation}{{3.1}{5}{Motivation: Diagonalization}{subsection.3.1}{}}
+\newlabel{sec:s4-motivation@cref}{{[subsection][1][3]3.1}{[1][5][]5}}
+\newlabel{lmm:conjugation}{{3.1}{5}{}{lemma.3.1}{}}
+\newlabel{lmm:conjugation@cref}{{[lemma][1][3]3.1}{[1][5][]5}}
+\newlabel{lmm:hippo-diagonalization}{{3.2}{5}{}{lemma.3.2}{}}
+\newlabel{lmm:hippo-diagonalization@cref}{{[lemma][2][3]3.2}{[1][5][]5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}The S4{} Parameterization: Normal Plus Low-Rank}{5}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:s4-overview}{{3.2}{5}{The \methodabbrv {} Parameterization: Normal Plus Low-Rank}{subsection.3.2}{}}
+\newlabel{sec:s4-overview@cref}{{[subsection][2][3]3.2}{[1][5][]5}}
+\citation{pan2015transformations,pan2017fast}
+\citation{gu2020hippo}
+\citation{pan2001structured,pan2015transformations,pan2017fast}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces \textsc  {S4{} Convolution Kernel (Sketch)}\relax }}{6}{algorithm.1}\protected@file@percent }
+\newlabel{alg:s4-convolution}{{1}{6}{\textsc {\methodabbrv {} Convolution Kernel (Sketch)}\relax }{algorithm.1}{}}
+\newlabel{alg:s4-convolution@cref}{{[algorithm][1][]1}{[1][5][]6}}
+\newlabel{step:cauchy}{{2}{6}{\textsc {\methodabbrv {} Convolution Kernel (Sketch)}\relax }{algorithm.1}{}}
+\newlabel{step:cauchy@cref}{{[algorithm][1][]1}{[1][5][]6}}
+\newlabel{thm:hippo-nplr}{{1}{6}{}{theorem.1}{}}
+\newlabel{thm:hippo-nplr@cref}{{[theorem][1][]1}{[1][6][]6}}
+\newlabel{eq:nplr}{{6}{6}{}{equation.3.6}{}}
+\newlabel{eq:nplr@cref}{{[equation][6][]6}{[1][6][]6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}S4{} Algorithms and Computational Complexity}{6}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:s4-efficiency}{{3.3}{6}{\methodabbrv {} Algorithms and Computational Complexity}{subsection.3.3}{}}
+\newlabel{sec:s4-efficiency@cref}{{[subsection][3][3]3.3}{[1][6][]6}}
+\newlabel{thm:s4-recurrence}{{2}{6}{\methodabbrv {} Recurrence}{theorem.2}{}}
+\newlabel{thm:s4-recurrence@cref}{{[theorem][2][]2}{[1][6][]6}}
+\newlabel{thm:s4-convolution}{{3}{6}{\methodabbrv {} Convolution}{theorem.3}{}}
+\newlabel{thm:s4-convolution@cref}{{[theorem][3][]3}{[1][6][]6}}
+\citation{goel2022sashimi}
+\citation{tay2021long}
+\citation{katharopoulos2020transformers}
+\citation{choromanski2020rethinking}
+\citation{tay2021long}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces  Complexity of various sequence models in terms of sequence length ($\bm  {L}$), batch size ($\bm  {B}$), and hidden dimension ($\bm  {H}$); tildes denote log factors. Metrics are parameter count, training computation, training space requirement, training parallelizability, and inference computation (for 1 sample and time-step). For simplicity, the state size \( N \) of S4{} is tied to \( H \). Bold denotes model is theoretically best for that metric. Convolutions are efficient for training while recurrence is efficient for inference, while SSMs combine the strengths of both. \relax }}{7}{table.caption.3}\protected@file@percent }
+\newlabel{tab:complexity}{{1}{7}{Complexity of various sequence models in terms of sequence length ($\bm {L}$), batch size ($\bm {B}$), and hidden dimension ($\bm {H}$); tildes denote log factors. Metrics are parameter count, training computation, training space requirement, training parallelizability, and inference computation (for 1 sample and time-step). For simplicity, the state size \( N \) of \methodabbrv {} is tied to \( H \). Bold denotes model is theoretically best for that metric. Convolutions are efficient for training while recurrence is efficient for inference, while SSMs combine the strengths of both. \relax }{table.caption.3}{}}
+\newlabel{tab:complexity@cref}{{[table][1][]1}{[1][7][]7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Architecture Details of the Deep S4{} Layer}{7}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:s4-architecture}{{3.4}{7}{Architecture Details of the Deep \methodabbrv {} Layer}{subsection.3.4}{}}
+\newlabel{sec:s4-architecture@cref}{{[subsection][4][3]3.4}{[1][6][]7}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{7}{section.4}\protected@file@percent }
+\newlabel{sec:experiments}{{4}{7}{Experiments}{section.4}{}}
+\newlabel{sec:experiments@cref}{{[section][4][]4}{[1][7][]7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}S4{} Efficiency Benchmarks}{7}{subsection.4.1}\protected@file@percent }
+\newlabel{sec:experiments-benchmark}{{4.1}{7}{\methodabbrv {} Efficiency Benchmarks}{subsection.4.1}{}}
+\newlabel{sec:experiments-benchmark@cref}{{[subsection][1][4]4.1}{[1][7][]7}}
+\citation{tay2021long}
+\citation{tay2021long}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Deep SSMs: The S4{} parameterization with \cref  {alg:s4-convolution} is asymptotically more efficient than the LSSL.\relax }}{8}{table.caption.5}\protected@file@percent }
+\newlabel{tab:ssm-benchmark}{{2}{8}{Deep SSMs: The \methodabbrv {} parameterization with \cref {alg:s4-convolution} is asymptotically more efficient than the LSSL.\relax }{table.caption.5}{}}
+\newlabel{tab:ssm-benchmark@cref}{{[table][2][]2}{[1][8][]8}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Benchmarks vs. efficient Transformers\relax }}{8}{table.caption.6}\protected@file@percent }
+\newlabel{tab:lra-benchmark}{{3}{8}{Benchmarks vs. efficient Transformers\relax }{table.caption.6}{}}
+\newlabel{tab:lra-benchmark@cref}{{[table][3][]3}{[1][8][]8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  Visualizations of a trained S4{} model on LRA Path-X. SSM convolution kernels \( \bm  {\overline  {K}} \in \mathbbm  {R}^{16384} \) are reshaped into a \( 128 \times 128 \) image. (\textit  {Left}) Example from the Path-X task, which involves deducing if the markers are connected by a path (\textit  {Top}) Filters from the first layer (\textit  {Bottom}) Filters from the last layer. \relax }}{8}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:pathx-filters}{{2}{8}{Visualizations of a trained \methodabbrv {} model on LRA Path-X. SSM convolution kernels \( \bm {\overline {K}} \in \mathbbm {R}^{16384} \) are reshaped into a \( 128 \times 128 \) image. (\textit {Left}) Example from the Path-X task, which involves deducing if the markers are connected by a path (\textit {Top}) Filters from the first layer (\textit {Bottom}) Filters from the last layer. \relax }{figure.caption.7}{}}
+\newlabel{fig:pathx-filters@cref}{{[figure][2][]2}{[1][8][]8}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces  (\textbf  {Long Range Arena}) (\textit  {Top}) Original Transformer variants in LRA. Full results in \cref  {sec:experiment-details-lrd}. (\textit  {Bottom}) Other models reported in the literature. \emph  {Please read \cref  {sec:reproduction} before citing this table.} \relax }}{8}{table.caption.8}\protected@file@percent }
+\newlabel{tab:lra}{{4}{8}{(\textbf {Long Range Arena}) (\textit {Top}) Original Transformer variants in LRA. Full results in \cref {sec:experiment-details-lrd}. (\textit {Bottom}) Other models reported in the literature. \emph {Please read \cref {sec:reproduction} before citing this table.} \relax }{table.caption.8}{}}
+\newlabel{tab:lra@cref}{{[table][4][]4}{[1][8][]8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Learning Long Range Dependencies}{8}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:experiments-lrd}{{4.2}{8}{Learning Long Range Dependencies}{subsection.4.2}{}}
+\newlabel{sec:experiments-lrd@cref}{{[subsection][2][4]4.2}{[1][8][]8}}
+\citation{Warden2018SpeechCA}
+\citation{romero2021ckconv}
+\citation{Donahue2019AdversarialAS}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}S4{} as a General Sequence Model}{9}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:experiments-general}{{4.3}{9}{\methodabbrv {} as a General Sequence Model}{subsection.4.3}{}}
+\newlabel{sec:experiments-general@cref}{{[subsection][3][4]4.3}{[1][9][]9}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces  (\textbf  {SC10 classification}) Transformer, CTM, RNN, CNN, and SSM models. (\textit  {MFCC}) Standard pre-processed MFCC features (length 161). (\textit  {Raw}) Unprocessed signals (length 16000). (\( \mathit  {0.5\times } \)) Frequency change at test time. {\fontfamily  {pzd}\fontencoding  {U}\fontseries  {m}\fontshape  {n}\selectfont  \char 55}{} denotes not applicable or computationally infeasible on single GPU. \emph  {Please read \cref  {sec:reproduction} before citing this table.} \relax }}{9}{table.caption.10}\protected@file@percent }
+\newlabel{tab:sc}{{5}{9}{(\textbf {SC10 classification}) Transformer, CTM, RNN, CNN, and SSM models. (\textit {MFCC}) Standard pre-processed MFCC features (length 161). (\textit {Raw}) Unprocessed signals (length 16000). (\( \mathit {0.5\times } \)) Frequency change at test time. \xmark {} denotes not applicable or computationally infeasible on single GPU. \emph {Please read \cref {sec:reproduction} before citing this table.} \relax }{table.caption.10}{}}
+\newlabel{tab:sc@cref}{{[table][5][]5}{[1][9][]9}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces  (\textbf  {Pixel-level 1-D image classification}) Comparison against reported test accuracies from prior works (Transformer, RNN, CNN, and SSM models). Extended results and citations in \cref  {sec:experiment-details}. \relax }}{9}{table.caption.11}\protected@file@percent }
+\newlabel{tab:image}{{6}{9}{(\textbf {Pixel-level 1-D image classification}) Comparison against reported test accuracies from prior works (Transformer, RNN, CNN, and SSM models). Extended results and citations in \cref {sec:experiment-details}. \relax }{table.caption.11}{}}
+\newlabel{tab:image@cref}{{[table][6][]6}{[1][9][]9}}
+\citation{baevski2018adaptive}
+\citation{rubanova2019latent,de2019gru,romero2021ckconv}
+\citation{haoyietal-informer-2021}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces  (\textbf  {CIFAR-10 density estimation}) As a generic \mbox  {sequence} model, S4{} is competitive with previous autoregressive models (in bits per dim.) while incorporating no 2D inductive bias, and has fast generation through its recurrence mode. \relax }}{10}{table.caption.13}\protected@file@percent }
+\newlabel{tab:cifar-generation}{{7}{10}{(\textbf {CIFAR-10 density estimation}) As a generic \mbox {sequence} model, \methodabbrv {} is competitive with previous autoregressive models (in bits per dim.) while incorporating no 2D inductive bias, and has fast generation through its recurrence mode. \relax }{table.caption.13}{}}
+\newlabel{tab:cifar-generation@cref}{{[table][7][]7}{[1][10][]10}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces  (\textbf  {WikiText-103 language modeling}) S4{} approaches the performance of Transformers with much faster generation. (\textit  {Top}) Transformer baseline which our implementation is based on, with attention replaced by S4. (\textit  {Bottom}) Attention-free models (RNNs and CNNs). \relax }}{10}{table.caption.14}\protected@file@percent }
+\newlabel{tab:wt103}{{8}{10}{(\textbf {WikiText-103 language modeling}) \methodabbrv {} approaches the performance of Transformers with much faster generation. (\textit {Top}) Transformer baseline which our implementation is based on, with attention replaced by \methodabbrv . (\textit {Bottom}) Attention-free models (RNNs and CNNs). \relax }{table.caption.14}{}}
+\newlabel{tab:wt103@cref}{{[table][8][]8}{[1][10][]10}}
+\citation{arjovsky2016unitary}
+\citation{dosovitskiy2020image}
+\citation{tolstikhin2021mlp}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}SSM Ablations: the Importance of HiPPO}{11}{subsection.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Unconstrained SSMs.}{11}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{NPLR SSMs.}{11}{section*.18}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Univariate long sequence time-series forecasting results. Full results in \cref  {sec:experiment-details-general-informer}.\relax }}{11}{table.caption.15}\protected@file@percent }
+\newlabel{tab:informer-s-long}{{9}{11}{Univariate long sequence time-series forecasting results. Full results in \cref {sec:experiment-details-general-informer}.\relax }{table.caption.15}{}}
+\newlabel{tab:informer-s-long@cref}{{[table][9][]9}{[1][10][]11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces CIFAR-10 classification with unconstrained, real-valued SSMs with various initializations. (\emph  {Left}) Train accuracy. (\emph  {Right}) Validation accuracy.\relax }}{12}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:ssm-ablation-real}{{3}{12}{CIFAR-10 classification with unconstrained, real-valued SSMs with various initializations. (\emph {Left}) Train accuracy. (\emph {Right}) Validation accuracy.\relax }{figure.caption.17}{}}
+\newlabel{fig:ssm-ablation-real@cref}{{[figure][3][]3}{[1][11][]12}}
+\newlabel{fig:ssm-ablation-nplr}{{4a}{12}{\relax }{figure.caption.19}{}}
+\newlabel{fig:ssm-ablation-nplr@cref}{{[subfigure][1][4]4a}{[1][11][]12}}
+\newlabel{sub@fig:ssm-ablation-nplr}{{a}{12}{\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:ssm-ablation-nplr@cref}{{[subfigure][1][4]4a}{[1][11][]12}}
+\newlabel{fig:ssm-ablation-reg}{{4b}{12}{\relax }{figure.caption.19}{}}
+\newlabel{fig:ssm-ablation-reg@cref}{{[subfigure][2][4]4b}{[1][11][]12}}
+\newlabel{sub@fig:ssm-ablation-reg}{{b}{12}{\relax }{figure.caption.19}{}}
+\newlabel{sub@fig:ssm-ablation-reg@cref}{{[subfigure][2][4]4b}{[1][11][]12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  CIFAR-10 validation accuracy of SSMs with different initializations and parameterizations. (\emph  {Left}) NPLR parameterization with random versus HiPPO initialization. (\emph  {Right}) All methods considered in this section, including minor Dropout regularization. S4 achieves SotA accuracy on sequential CIFAR-10 with just 100K parameters. \relax }}{12}{figure.caption.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{12}{section.5}\protected@file@percent }
+\newlabel{sec:conclusion}{{5}{12}{Conclusion}{section.5}{}}
+\newlabel{sec:conclusion@cref}{{[section][5][]5}{[1][12][]12}}
+\bibdata{biblio}
+\bibcite{arjovsky2016unitary}{{1}{2016}{{Arjovsky et~al.}}{{Arjovsky, Shah, and Bengio}}}
+\bibcite{baevski2018adaptive}{{2}{2018}{{Baevski and Auli}}{{}}}
+\bibcite{bai2018empirical}{{3}{2018}{{Bai et~al.}}{{Bai, Kolter, and Koltun}}}
+\bibcite{trellisnet}{{4}{2019}{{Bai et~al.}}{{Bai, Kolter, and Koltun}}}
+\bibcite{chang2017dilated}{{5}{2017}{{Chang et~al.}}{{Chang, Zhang, Han, Yu, Guo, Tan, Cui, Witbrock, Hasegawa-Johnson, and Huang}}}
+\bibcite{child2019generating}{{6}{2019}{{Child et~al.}}{{Child, Gray, Radford, and Sutskever}}}
+\bibcite{chilkuri2021parallelizing}{{7}{2021}{{Chilkuri and Eliasmith}}{{}}}
+\bibcite{choromanski2020rethinking}{{8}{2020}{{Choromanski et~al.}}{{Choromanski, Likhosherstov, Dohan, Song, Gane, Sarlos, Hawkins, Davis, Mohiuddin, Kaiser, et~al.}}}
+\bibcite{dauphin2017language}{{9}{2017}{{Dauphin et~al.}}{{Dauphin, Fan, Auli, and Grangier}}}
+\bibcite{de2019gru}{{10}{2019}{{De~Brouwer et~al.}}{{De~Brouwer, Simm, Arany, and Moreau}}}
+\bibcite{Donahue2019AdversarialAS}{{11}{2019}{{Donahue et~al.}}{{Donahue, McAuley, and Puckette}}}
+\bibcite{dosovitskiy2020image}{{12}{2020}{{Dosovitskiy et~al.}}{{Dosovitskiy, Beyer, Kolesnikov, Weissenborn, Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, et~al.}}}
+\bibcite{erichson2021lipschitz}{{13}{2021}{{Erichson et~al.}}{{Erichson, Azencot, Queiruga, Hodgkinson, and Mahoney}}}
+\bibcite{goel2022sashimi}{{14}{2022}{{Goel et~al.}}{{Goel, Gu, Donahue, and R{\'e}}}}
+\bibcite{golub2013matrix}{{15}{2013}{{Golub and Van~Loan}}{{}}}
+\bibcite{gu2020hippo}{{16}{2020{}}{{Gu et~al.}}{{Gu, Dao, Ermon, Rudra, and R{\'{e}}}}}
+\bibcite{gu2020improving}{{17}{2020{}}{{Gu et~al.}}{{Gu, Gulcehre, Paine, Hoffman, and Pascanu}}}
+\bibcite{gu2021lssl}{{18}{2021}{{Gu et~al.}}{{Gu, Johnson, Goel, Saab, Dao, Rudra, and R\'{e}}}}
+\bibcite{gu2022s4d}{{19}{2022{}}{{Gu et~al.}}{{Gu, Gupta, Goel, and R\'e}}}
+\bibcite{gu2022hippo}{{20}{2022{}}{{Gu et~al.}}{{Gu, Johnson, Timalsina, Rudra, and R\'e}}}
+\bibcite{lstm}{{21}{1997}{{Hochreiter and Schmidhuber}}{{}}}
+\bibcite{katharopoulos2020transformers}{{22}{2020}{{Katharopoulos et~al.}}{{Katharopoulos, Vyas, Pappas, and Fleuret}}}
+\bibcite{kidger2020neural}{{23}{2020}{{Kidger et~al.}}{{Kidger, Morrill, Foster, and Lyons}}}
+\bibcite{lezcano2019cheap}{{24}{2019}{{Lezcano-Casado and Mart{\'\i }nez-Rubio}}{{}}}
+\bibcite{indrnn}{{25}{2018}{{Li et~al.}}{{Li, Li, Cook, Zhu, and Gao}}}
+\bibcite{lioutas2020time}{{26}{2020}{{Lioutas and Guo}}{{}}}
+\bibcite{merity2018scalable}{{27}{2018}{{Merity et~al.}}{{Merity, Keskar, Bradbury, and Socher}}}
+\bibcite{oord2016wavenet}{{28}{2016}{{Oord et~al.}}{{Oord, Dieleman, Zen, Simonyan, Vinyals, Graves, Kalchbrenner, Senior, and Kavukcuoglu}}}
+\bibcite{pan2001structured}{{29}{2001}{{Pan}}{{}}}
+\bibcite{pan2017fast}{{30}{2017}{{Pan}}{{}}}
+\bibcite{pan2015transformations}{{31}{2015}{{Pan}}{{}}}
+\bibcite{pascanu2013difficulty}{{32}{2013}{{Pascanu et~al.}}{{Pascanu, Mikolov, and Bengio}}}
+\bibcite{rae2018fast}{{33}{2018}{{Rae et~al.}}{{Rae, Dyer, Dayan, and Lillicrap}}}
+\bibcite{ramachandran2017fast}{{34}{2017}{{Ramachandran et~al.}}{{Ramachandran, Paine, Khorrami, Babaeizadeh, Chang, Zhang, Hasegawa-Johnson, Campbell, and Huang}}}
+\bibcite{romero2021ckconv}{{35}{2021}{{Romero et~al.}}{{Romero, Kuzina, Bekkers, Tomczak, and Hoogendoorn}}}
+\bibcite{romero2022flexconv}{{36}{2022}{{Romero et~al.}}{{Romero, Bruintjes, Tomczak, Bekkers, Hoogendoorn, and van Gemert}}}
+\bibcite{rubanova2019latent}{{37}{2019}{{Rubanova et~al.}}{{Rubanova, Chen, and Duvenaud}}}
+\bibcite{rusch2021unicornn}{{38}{2021}{{Rusch and Mishra}}{{}}}
+\bibcite{salimans2017pixelcnn++}{{39}{2017}{{Salimans et~al.}}{{Salimans, Karpathy, Chen, and Kingma}}}
+\bibcite{tay2021long}{{40}{2021}{{Tay et~al.}}{{Tay, Dehghani, Abnar, Shen, Bahri, Pham, Rao, Yang, Ruder, and Metzler}}}
+\bibcite{tolstikhin2021mlp}{{41}{2021}{{Tolstikhin et~al.}}{{Tolstikhin, Houlsby, Kolesnikov, Beyer, Zhai, Unterthiner, Yung, Keysers, Uszkoreit, Lucic, et~al.}}}
+\bibcite{trinh2018learning}{{42}{2018}{{Trinh et~al.}}{{Trinh, Dai, Luong, and Le}}}
+\bibcite{tustin1947method}{{43}{1947}{{Tustin}}{{}}}
+\bibcite{vaswani2017attention}{{44}{2017}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
+\bibcite{voelker2019legendre}{{45}{2019}{{Voelker et~al.}}{{Voelker, Kaji{\'c}, and Eliasmith}}}
+\bibcite{voelker2019dynamical}{{46}{2019}{{Voelker}}{{}}}
+\bibcite{Warden2018SpeechCA}{{47}{2018}{{Warden}}{{}}}
+\bibcite{woodbury1950}{{48}{1950}{{Woodbury}}{{}}}
+\bibcite{wu2019pay}{{49}{2019}{{Wu et~al.}}{{Wu, Fan, Baevski, Dauphin, and Auli}}}
+\bibcite{haoyietal-informer-2021}{{50}{2021}{{Zhou et~al.}}{{Zhou, Zhang, Peng, Zhang, Li, Xiong, and Zhang}}}
+\citation{voelker2019dynamical,voelker2019legendre}
+\citation{chilkuri2021parallelizing}
+\citation{gu2020hippo}
+\citation{gu2021lssl}
+\citation{gu2021lssl}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Discussion}{16}{appendix.A}\protected@file@percent }
+\newlabel{sec:discussion}{{A}{16}{Discussion}{appendix.A}{}}
+\newlabel{sec:discussion@cref}{{[appendix][1][2147483647]A}{[1][16][]16}}
+\@writefile{toc}{\contentsline {paragraph}{Related Work.}{16}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Implementation.}{16}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations and Future Directions.}{16}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Numerical Instability of LSSL}{16}{appendix.B}\protected@file@percent }
+\newlabel{sec:lssl-instability}{{B}{16}{Numerical Instability of LSSL}{appendix.B}{}}
+\newlabel{sec:lssl-instability@cref}{{[appendix][2][2147483647]B}{[1][16][]16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}HiPPO Diagonalization}{17}{subsection.B.1}\protected@file@percent }
+\newlabel{eq:diagonalization-proof}{{7}{17}{HiPPO Diagonalization}{equation.B.7}{}}
+\newlabel{eq:diagonalization-proof@cref}{{[equation][7][2147483647]7}{[1][17][]17}}
+\citation{gu2021lssl}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}Fast but Unstable LSSL Algorithm}{18}{subsection.B.2}\protected@file@percent }
+\citation{gu2020hippo}
+\@writefile{toc}{\contentsline {section}{\numberline {C}S4{} Algorithm Details}{19}{appendix.C}\protected@file@percent }
+\newlabel{sec:s4-details}{{C}{19}{\methodabbrv {} Algorithm Details}{appendix.C}{}}
+\newlabel{sec:s4-details@cref}{{[appendix][3][2147483647]C}{[1][19][]19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}NPLR Representations of HiPPO Matrices}{19}{subsection.C.1}\protected@file@percent }
+\newlabel{sec:s4-nplr-proof}{{C.1}{19}{NPLR Representations of HiPPO Matrices}{subsection.C.1}{}}
+\newlabel{sec:s4-nplr-proof@cref}{{[subappendix][1][2147483647,3]C.1}{[1][19][]19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}Computing the S4{} Recurrent View}{21}{subsection.C.2}\protected@file@percent }
+\newlabel{sec:s4-recurrence-proof}{{C.2}{21}{Computing the \methodabbrv {} Recurrent View}{subsection.C.2}{}}
+\newlabel{sec:s4-recurrence-proof@cref}{{[subappendix][2][2147483647,3]C.2}{[1][20][]21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.3}Computing the Convolutional View}{22}{subsection.C.3}\protected@file@percent }
+\newlabel{sec:s4-convolution-proof}{{C.3}{22}{Computing the Convolutional View}{subsection.C.3}{}}
+\newlabel{sec:s4-convolution-proof@cref}{{[subappendix][3][2147483647,3]C.3}{[1][21][]22}}
+\@writefile{toc}{\contentsline {paragraph}{Reduction 0: Diagonalization}{22}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reduction 1: SSM Generating Function}{22}{section*.26}\protected@file@percent }
+\newlabel{def:generating-function}{{2}{22}{SSM Generating Function}{definition.2}{}}
+\newlabel{def:generating-function@cref}{{[definition][2][2147483647]2}{[1][22][]22}}
+\newlabel{eq:generating-function}{{10}{22}{SSM Generating Function}{equation.C.10}{}}
+\newlabel{eq:generating-function@cref}{{[equation][10][2147483647]10}{[1][22][]22}}
+\citation{woodbury1950,golub2013matrix}
+\@writefile{toc}{\contentsline {paragraph}{Reduction 2: Woodbury Correction}{23}{section*.27}\protected@file@percent }
+\newlabel{prop:woodbury}{{4}{23}{Binomial Inverse Theorem or Woodbury matrix identity~\cite {woodbury1950,golub2013matrix}}{theorem.4}{}}
+\newlabel{prop:woodbury@cref}{{[proposition][4][2147483647]4}{[1][23][]23}}
+\newlabel{lmm:resolvent-woodbury}{{C.3}{23}{}{lemma.C.3}{}}
+\newlabel{lmm:resolvent-woodbury@cref}{{[lemma][3][2147483647,3]C.3}{[1][23][]23}}
+\newlabel{lmm:bilinear-resolvent}{{C.4}{24}{}{lemma.C.4}{}}
+\newlabel{lmm:bilinear-resolvent@cref}{{[lemma][4][2147483647,3]C.4}{[1][24][]24}}
+\citation{pan2001structured,pan2015transformations,pan2017fast}
+\citation{gu2021lssl}
+\citation{tay2021long}
+\@writefile{toc}{\contentsline {paragraph}{Reduction 3: Cauchy Kernel}{25}{section*.28}\protected@file@percent }
+\newlabel{def:cauchy}{{3}{25}{}{definition.3}{}}
+\newlabel{def:cauchy@cref}{{[definition][3][2147483647]3}{[1][24][]25}}
+\newlabel{prop:cauchy}{{5}{25}{Cauchy}{theorem.5}{}}
+\newlabel{prop:cauchy@cref}{{[proposition][5][2147483647]5}{[1][25][]25}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}Experiment Details and Full Results}{25}{appendix.D}\protected@file@percent }
+\newlabel{sec:experiment-details}{{D}{25}{Experiment Details and Full Results}{appendix.D}{}}
+\newlabel{sec:experiment-details@cref}{{[appendix][4][2147483647]D}{[1][25][]25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Benchmarking}{25}{subsection.D.1}\protected@file@percent }
+\newlabel{sec:experiment-details-benchmarking}{{D.1}{25}{Benchmarking}{subsection.D.1}{}}
+\newlabel{sec:experiment-details-benchmarking@cref}{{[subappendix][1][2147483647,4]D.1}{[1][25][]25}}
+\@writefile{toc}{\contentsline {paragraph}{Benchmarks against LSSL}{25}{section*.29}\protected@file@percent }
+\citation{tay2021long}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Full results for the Long Range Arena (LRA) benchmark for long-range dependencies in sequence models. (Top): Original Transformer variants in LRA. (Bottom): Other models reported in the literature.\relax }}{26}{table.caption.32}\protected@file@percent }
+\newlabel{tab:lra-full}{{10}{26}{Full results for the Long Range Arena (LRA) benchmark for long-range dependencies in sequence models. (Top): Original Transformer variants in LRA. (Bottom): Other models reported in the literature.\relax }{table.caption.32}{}}
+\newlabel{tab:lra-full@cref}{{[table][10][2147483647]10}{[1][26][]26}}
+\@writefile{toc}{\contentsline {paragraph}{Benchmarks against Efficient Transformers}{26}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Long-Range Dependencies}{26}{subsection.D.2}\protected@file@percent }
+\newlabel{sec:experiment-details-lrd}{{D.2}{26}{Long-Range Dependencies}{subsection.D.2}{}}
+\newlabel{sec:experiment-details-lrd@cref}{{[subappendix][2][2147483647,4]D.2}{[1][26][]26}}
+\@writefile{toc}{\contentsline {paragraph}{Long Range Arena}{26}{section*.31}\protected@file@percent }
+\citation{gu2021lssl}
+\citation{vaswani2017attention}
+\citation{choromanski2020rethinking}
+\citation{lezcano2019cheap}
+\citation{erichson2021lipschitz}
+\citation{Donahue2019AdversarialAS}
+\citation{Donahue2019AdversarialAS}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces  The values of the best hyperparameters found for classification datasets; LRA (Top) and images/speech (Bottom). LR is learning rate and WD is weight decay. BN and LN refer to Batch Normalization and Layer Normalization. \relax }}{27}{table.caption.33}\protected@file@percent }
+\newlabel{tab::best-hyperparameters}{{11}{27}{The values of the best hyperparameters found for classification datasets; LRA (Top) and images/speech (Bottom). LR is learning rate and WD is weight decay. BN and LN refer to Batch Normalization and Layer Normalization. \relax }{table.caption.33}{}}
+\newlabel{tab::best-hyperparameters@cref}{{[table][11][2147483647]11}{[1][26][]27}}
+\@writefile{toc}{\contentsline {paragraph}{Speech Commands}{27}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.3}General Sequence Modeling}{27}{subsection.D.3}\protected@file@percent }
+\newlabel{sec:experiment-details-general}{{D.3}{27}{General Sequence Modeling}{subsection.D.3}{}}
+\newlabel{sec:experiment-details-general@cref}{{[subappendix][3][2147483647,4]D.3}{[1][27][]27}}
+\citation{salimans2017pixelcnn++}
+\citation{salimans2017pixelcnn++}
+\citation{merity2018scalable}
+\citation{rae2018fast}
+\citation{dauphin2017language}
+\citation{trellisnet}
+\citation{wu2019pay}
+\citation{lioutas2020time}
+\citation{baevski2018adaptive}
+\citation{lioutas2020time}
+\citation{baevski2018adaptive}
+\citation{baevski2018adaptive}
+\citation{baevski2018adaptive}
+\citation{baevski2018adaptive}
+\citation{baevski2018adaptive}
+\citation{baevski2018adaptive}
+\citation{katharopoulos2020transformers}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {D.3.1}CIFAR Density Estimation}{28}{subsubsection.D.3.1}\protected@file@percent }
+\newlabel{sec:experiment-details-general-cifargen}{{D.3.1}{28}{CIFAR Density Estimation}{subsubsection.D.3.1}{}}
+\newlabel{sec:experiment-details-general-cifargen@cref}{{[subsubappendix][1][2147483647,4,3]D.3.1}{[1][28][]28}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {D.3.2}WikiText-103 Language Modeling}{28}{subsubsection.D.3.2}\protected@file@percent }
+\newlabel{sec:experiment-details-general-wt103}{{D.3.2}{28}{WikiText-103 Language Modeling}{subsubsection.D.3.2}{}}
+\newlabel{sec:experiment-details-general-wt103@cref}{{[subsubappendix][2][2147483647,4,3]D.3.2}{[1][28][]28}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {D.3.3}Autoregressive Generation Speed}{28}{subsubsection.D.3.3}\protected@file@percent }
+\newlabel{sec:experiment-details-general-speed}{{D.3.3}{28}{Autoregressive Generation Speed}{subsubsection.D.3.3}{}}
+\newlabel{sec:experiment-details-general-speed@cref}{{[subsubappendix][3][2147483647,4,3]D.3.3}{[1][28][]28}}
+\@writefile{toc}{\contentsline {paragraph}{Protocol.}{28}{section*.35}\protected@file@percent }
+\citation{katharopoulos2020transformers}
+\citation{ramachandran2017fast}
+\citation{child2019generating}
+\citation{baevski2018adaptive}
+\citation{vaswani2017attention,trinh2018learning}
+\citation{romero2021ckconv}
+\citation{trellisnet}
+\citation{bai2018empirical}
+\citation{lstm,gu2020improving}
+\citation{trinh2018learning}
+\citation{chang2017dilated}
+\citation{chang2017dilated}
+\citation{indrnn}
+\citation{lezcano2019cheap}
+\citation{gu2020improving}
+\citation{voelker2019legendre}
+\citation{gu2020hippo}
+\citation{rusch2021unicornn}
+\citation{chilkuri2021parallelizing}
+\citation{erichson2021lipschitz}
+\citation{haoyietal-informer-2021}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces  (\textbf  {Pixel-level image classification.}) Citations refer to the original model; additional citation indicates work from which this baseline is reported. \relax }}{29}{table.caption.38}\protected@file@percent }
+\newlabel{tab:image-full}{{12}{29}{(\textbf {Pixel-level image classification.}) Citations refer to the original model; additional citation indicates work from which this baseline is reported. \relax }{table.caption.38}{}}
+\newlabel{tab:image-full@cref}{{[table][12][2147483647]12}{[1][29][]29}}
+\@writefile{toc}{\contentsline {paragraph}{Baselines.}{29}{section*.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {D.3.4}Pixel-Level Sequential Image Classification}{29}{subsubsection.D.3.4}\protected@file@percent }
+\newlabel{sec:experiment-details-general-image}{{D.3.4}{29}{Pixel-Level Sequential Image Classification}{subsubsection.D.3.4}{}}
+\newlabel{sec:experiment-details-general-image@cref}{{[subsubappendix][4][2147483647,4,3]D.3.4}{[1][29][]29}}
+\citation{haoyietal-informer-2021}
+\citation{haoyietal-informer-2021}
+\citation{haoyietal-informer-2021}
+\citation{gu2022s4d,gu2022hippo}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of S4{} and specialized time-series models for forecasting tasks. (\textit  {Top Left}) The forecasting task involves predicting future values of a time-series given past context. (\textit  {Bottom Left}) We perform simple forecasting using a sequence model such as S4{} as a black box. (\textit  {Right}) Informer uses an encoder-decoder architecture designed specifically for forecasting problems involving a customized attention module (figure taken from\nobreakspace  {}\citet  {haoyietal-informer-2021}).\relax }}{30}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:s4-architecture}{{5}{30}{Comparison of \methodabbrv {} and specialized time-series models for forecasting tasks. (\textit {Top Left}) The forecasting task involves predicting future values of a time-series given past context. (\textit {Bottom Left}) We perform simple forecasting using a sequence model such as \methodabbrv {} as a black box. (\textit {Right}) Informer uses an encoder-decoder architecture designed specifically for forecasting problems involving a customized attention module (figure taken from~\citet {haoyietal-informer-2021}).\relax }{figure.caption.39}{}}
+\newlabel{fig:s4-architecture@cref}{{[figure][5][2147483647]5}{[1][30][]30}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {D.3.5}Time Series Forecasting compared to Informer}{30}{subsubsection.D.3.5}\protected@file@percent }
+\newlabel{sec:experiment-details-general-informer}{{D.3.5}{30}{Time Series Forecasting compared to Informer}{subsubsection.D.3.5}{}}
+\newlabel{sec:experiment-details-general-informer@cref}{{[subsubappendix][5][2147483647,4,3]D.3.5}{[1][29][]30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.4}Visualizations}{30}{subsection.D.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.5}Reproduction}{30}{subsection.D.5}\protected@file@percent }
+\newlabel{sec:reproduction}{{D.5}{30}{Reproduction}{subsection.D.5}{}}
+\newlabel{sec:reproduction@cref}{{[subappendix][5][2147483647,4]D.5}{[1][30][]30}}
+\@writefile{toc}{\contentsline {paragraph}{Long Range Arena}{30}{section*.43}\protected@file@percent }
+\citation{gu2022s4d}
+\citation{Warden2018SpeechCA}
+\citation{kidger2020neural}
+\citation{kidger2020neural,romero2021ckconv,gu2021lssl,romero2022flexconv}
+\citation{gu2022s4d}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Univariate long sequence time-series forecasting results on four datasets (five cases).\relax }}{31}{table.caption.40}\protected@file@percent }
+\newlabel{tab:informer-s}{{13}{31}{Univariate long sequence time-series forecasting results on four datasets (five cases).\relax }{table.caption.40}{}}
+\newlabel{tab:informer-s@cref}{{[table][13][2147483647]13}{[1][30][]31}}
+\@writefile{toc}{\contentsline {paragraph}{Speech Commands}{31}{section*.44}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{WikiText-103}{31}{section*.45}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Multivariate long sequence time-series forecasting results on four datasets (five cases).\relax }}{32}{table.caption.41}\protected@file@percent }
+\newlabel{tab:informer-m}{{14}{32}{Multivariate long sequence time-series forecasting results on four datasets (five cases).\relax }{table.caption.41}{}}
+\newlabel{tab:informer-m@cref}{{[table][14][2147483647]14}{[1][30][]32}}
+\newlabel{fig:pathfinder-all-conv-filters}{{\caption@xref {fig:pathfinder-all-conv-filters}{ on input line 425}}{32}{Visualizations}{figure.caption.42}{}}
+\newlabel{fig:pathfinder-all-conv-filters@cref}{{[subappendix][4][2147483647,4]D.4}{[1][30][]32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces ({\bf  Convolutional filters on Pathfinder}) A random selection of filters learned by S4{} in the first layer (top 2 rows) and last layer (bottom 2 rows) of the best model.\relax }}{32}{figure.caption.42}\protected@file@percent }
+\gdef \@abspage@last{32}

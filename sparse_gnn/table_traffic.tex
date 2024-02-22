@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}{ l | r r r |  r r r}
+\multicolumn{1}{c}{}&\multicolumn{3}{|c}{METR-LA} & \multicolumn{3}{|c}{PEMS-BAY}\\
+\cmidrule[.8pt]{1-7}
+ \multicolumn{1}{c|}{Model} & \multicolumn{1}{c}{\small MAE @ 15} & \multicolumn{1}{c}{\small MAE @ 30} & \multicolumn{1}{c|}{\small MAE @ 60} & \multicolumn{1}{c}{\small MAE @ 15} & \multicolumn{1}{c}{\small MAE @ 30} & \multicolumn{1}{c}{\small MAE @ 60}\\
+\midrule
+\text{Full attention} & 2.727 {\tiny $\pm$ .005} & 3.049 {\tiny $\pm$ .009} & 3.411 {\tiny $\pm$ .007} & 1.335 {\tiny $\pm$ .003} & 1.655 {\tiny $\pm$ .007} & 1.929 {\tiny $\pm$ .007}
+\\
+\midrule
+\text{GTS} & 2.750 {\tiny $\pm$ .005} & 3.174 {\tiny $\pm$ .013} & 3.653 {\tiny $\pm$ .048} &1.360 {\tiny $\pm$ .011} & 1.715 {\tiny $\pm$ .032} & 2.054 {\tiny $\pm$ .061}\\
+$\text{MTGNN}$  & 2.690 {\tiny $\pm$ .012} & 3.057 {\tiny $\pm$ .016} & 3.520 {\tiny $\pm$ .019} & 1.328 {\tiny $\pm$ .005} & 1.655 {\tiny $\pm$ .010} & 1.951 {\tiny $\pm$ .012}\\
+
+\midrule
+\text{Our (SNS)} & 2.725 {\tiny $\pm$ .005} & 3.051 {\tiny $\pm$ .009} & 3.412 {\tiny $\pm$ .013} & 1.317 {\tiny $\pm$ .002} & 1.620 {\tiny $\pm$ .003} & 1.873 {\tiny $\pm$ .005}
+\\
+\midrule
+\midrule
+{Adjacency}&\multicolumn{3}{|c}{}&\multicolumn{3}{|c}{}\\
+\text{--Truth} & 2.720 {\tiny $\pm$ .004} & 3.106 {\tiny $\pm$ .008} & 3.556 {\tiny $\pm$ .011} & 1.335 {\tiny $\pm$ .001} & 1.676 {\tiny $\pm$ .004} & 1.993 {\tiny $\pm$ .008}\\
+\text{--Random} & 2.801 {\tiny $\pm$ .006} & 3.160 {\tiny $\pm$ .008} & 3.517 {\tiny $\pm$ .009} & 1.327 {\tiny $\pm$ .001} & 1.636 {\tiny $\pm$ .002} & 1.897 {\tiny $\pm$ .003}\\
+\text{--Identity} & 2.842 {\tiny $\pm$ .002} & 3.264 {\tiny $\pm$ .002} & 3.740 {\tiny $\pm$ .004} & 1.341 {\tiny $\pm$ .001} & 1.684 {\tiny $\pm$ .001} & 2.013 {\tiny $\pm$ .003}\\
+\midrule
+
+\end{tabular}}
+\caption{Results on the traffic datasets.}
+\label{t:traffic}
+\end{table}

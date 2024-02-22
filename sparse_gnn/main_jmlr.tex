@@ -1,0 +1,132 @@
+\documentclass[twoside,11pt]{article}
+
+% Any additional packages needed should be included after jmlr2e.
+% Note that jmlr2e.sty includes epsfig, amssymb, natbib and graphicx,
+% and defines many common macros, such as 'proof' and 'example'.
+%
+% It also sets the bibliographystyle to plainnat; for more information on
+% natbib citation styles, see the natbib documentation, a copy of which
+% is archived at http://www.jmlr.org/format/natbib.pdf
+
+% Available options for package jmlr2e are:
+%
+%   - abbrvbib : use abbrvnat for the bibliography style
+%   - nohyperref : do not load the hyperref package
+%   - preprint : remove JMLR specific information from the template,
+%         useful for example for posting to preprint servers.
+%
+% Example of using the package with custom options:
+%
+% \usepackage[abbrvbib, preprint]{jmlr2e}
+
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+%\usepackage[hidelinks]{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{xcolor}         % colors
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{todonotes}
+% \usepackage{amsthm}
+% \newtheorem{theo}{Theorem}
+% \newtheorem{lem}{Lemma}
+% \newtheorem{prop}{Proposition}
+% \newtheorem{ex}{Example}
+\usepackage{wrapfig}
+\usepackage[inline]{enumitem}
+\usepackage{bbm}
+\usepackage{lipsum}
+
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage{lastpage}
+\usepackage[abbrvbib]{jmlr2e}
+
+% \bibliographystyle{abbrvnat}
+% \bibliographystyle{plainnat}
+% \setcitestyle{numbers,square,comma}
+
+\include{notation}
+
+\newcommand{\gso}{\mA}
+\newcommand{\gsomean}{\boldsymbol{\mu}}
+\newcommand{\gsofr}{\gso^\mu}
+\newcommand{\ptheta}{{\vp_\theta}}
+\newcommand{\aij}{{a_{i,j}}}
+\newcommand{\Gumb}{\text{Gumbel}}
+\newcommand{\supp}{\text{Supp}}
+\newcommand{\frfun}{\mathfrak{F}}
+\newcommand{\sensorset}{\mathcal{S}}
+\newcommand{\losst}{\mathcal{L}_t\left(\psi,\theta\right)}
+\newcommand{\surrlosst}{\widehat{\mathcal{L}}_t\left(\psi,\theta\right)}
+
+\definecolor{ForestGreen}{RGB}{34,139,34}
+
+\jmlrheading{1}{2000}{1-48}{4/00}{10/00}{meila00a}{Marina Meil\u{a} and Michael I. Jordan}
+
+% Short headings should be running head and authors last names
+
+\ShortHeadings{Sparse Graph Learning from Spatiotemporal Time Series}{Cini, Zambon, Alippi}
+\firstpageno{1}
+
+\begin{document}
+
+\jmlrheading{24}{2023}{1-\pageref{LastPage}}{10/22; Revised
+7/23}{8/23}{22-1154}{Andrea Cini, Daniele Zambon, Cesare Alippi}
+
+\ShortHeadings{Sparse Graph Learning from Spatiotemporal Time Series}{Cini, Zambon and Alippi}
+
+\title{Sparse Graph Learning from Spatiotemporal Time Series}
+
+\author{\name Andrea Cini \email andrea.cini@usi.ch \\
+       \addr The Swiss AI Lab IDSIA\\
+       Universit\`a della Svizzera italiana\\
+       Lugano, CH
+       \AND
+\name Daniele Zambon \email daniele.zambon@usi.ch \\
+       \addr The Swiss AI Lab IDSIA\\
+       Universit\`a della Svizzera italiana\\
+       Lugano, CH
+       \AND
+\name Cesare Alippi \email cesare.alippi@usi.ch \\
+       \addr The Swiss AI Lab IDSIA\\
+       Universit\`a della Svizzera italiana\\
+       Lugano, CH\\
+       \addr Politecnico di Milano\\
+       Milan, IT
+}
+
+\editor{Silvia Chiappa}
+
+\maketitle
+
+\input{abstract}
+
+\begin{keywords}
+    graph learning, spatiotemporal data, graph-based forecasting, time series forecasting, score-based learning, graph neural networks
+\end{keywords}
+
+
+\input{content.tex}
+
+
+\appendix
+
+%\setcounter{page}{1}
+
+\section*{Appendix}
+
+\input{appendix}
+
+\bibliography{main.bib}
+
+\end{document}

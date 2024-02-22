@@ -1,0 +1,112 @@
+\section{Deferred Proofs}\label{a:proofs}
+
+This Appendix provides the proofs for Lemma~\ref{lemma:frechet-fun} and Lemma~\ref{lemma:pi-geq-pj}.
+
+\subsection{Proof of Lemma~\ref{lemma:frechet-fun}}\label{a:proof-lemma:frechet-fun}
+Note that for all $\gso,\gso'\in \gA \triangleq \{0,1\}^{N\times N}$  the Fr\'echet function $\frfun_H$ can be expressed as
+\begin{equation}
+\frfun_H(\gso') = \frfun_F(\gso') \triangleq \E_{\gso\sim\ptheta}\left[\lVert \gso - \gso'\rVert_F^2\right]
+\end{equation}
+w.r.t.\ the Frobenius norm, therefore we have also 
+\begin{equation}
+\min_{\gso'\in \gA} \frfun_H(\gso') = 
+\min_{\gso'\in \gA} \frfun_F(\gso').
+\end{equation}
+Note now that 
+\begin{align}
+\frfun_F(\gso') &=  \E_\ptheta\left[\lVert \gso - \gso'\rVert^2_F\right] 
+    =   \E_\ptheta\left[\lVert \gso \pm \gsomean - \gso'\rVert^2_F\right]
+\\& =   \E_\ptheta\left[\lVert \gso - \gsomean\rVert^2_F\right] 
+        + 2 \E_\ptheta\left[\langle \gso-\gsomean ,\gsomean - \gso'\rangle_F\right] 
+        +   \E_\ptheta\left[\lVert \gsomean - \gso'\rVert^2_F\right]
+\\& =   \E_\ptheta\left[\lVert \gso - \gsomean\rVert^2_F\right] 
+        + 2 \underbrace{\langle \E_\ptheta[\gso]-\gsomean ,\gsomean - \gso'\rangle_F}_{=0} 
+        +   \lVert \gsomean - \gso'\rVert^2_F.
+\end{align}
+Moreover, as the first term does not depend on $\gso'$, the minimum of $\frfun_F(\gso')$ is achieved at the minimum of 
+\begin{equation}
+\lVert \gsomean - \gso'\rVert^2_F=\sum_{i,j=1}^N(\gsomean_{i,j} - \gso_{i,j}')^2.
+\end{equation}
+
+
+
+
+\subsection{Proof of Lemma~\ref{lemma:pi-geq-pj}}
+The neighborhood of each node $n$ is sampled independently from the others, so we derive the proof for a reference node $n$ and denote $\phi=\Phi_{n,:}$.
+
+Note that, for every pair of node $i,j\in\sensorset$ and scalar $g\in\mathbb R$
+\begin{align}
+    \mathbb P(G_{\phi_i}\ge g) &\ge \mathbb P(G_{\phi_j}\ge g)\\
+        \iff&e^{-e^{-(g-\phi_i)}}=\cdff_{\phi_i}(g) \le \cdff_{\phi_j}(g)=e^{-e^{-(g-\phi_j)}} \\
+        \iff&\left({e^{-e^{-g}}}\right)^{e^{\phi_i}} \le \left({e^{-e^{-g}}}\right)^{e^{\phi_i}}.
+\end{align}
+Being ${e^{-e^{-g}}}<1$ and the $e^x$ monotone we obtain
+\begin{align}
+    \mathbb P(G_{\phi_i}\ge g) &\ge \mathbb P(G_{\phi_j}\ge g)
+    \iff e^{\phi_i} \ge e^{\phi_j}
+    \iff \phi_i \ge \phi_j. \label{eq:phii-ge-phij}
+\end{align}
+$P(\gso_{n,i}=1)$ can then be rewritten as
+\begin{align}
+    \mathbb P(\gso_{n,i}=1) 
+    &=\mathbb P(G_{\phi_i}\in \topk\{G_{\phi_l}:l\in\sensorset\}) 
+    =\mathbb P(G_{\phi_i}\ge \overline G)
+    \\&=\int \mathbb P(G_{\phi_i}\ge g) \pdff_{\overline G}(g)\, dg  \label{eq:int-mu-ni}
+\end{align}
+with $\overline G$ being the random variable associated with the $K$-th largest realization in $\{G_{\phi_l}:l\in\sensorset\}$ and $\pdff_{\overline G}$ its p.d.f., we obtain
+\begin{align}
+    \mathbb P(\gso_{n,i}=1) &\ge \mathbb P(\gso_{n,j}=1) 
+    \ \stackrel{(\text{Eq.~\ref{eq:int-mu-ni})}}{\iff}\  \mathbb P(G_{\phi_i}\ge g) \ge \mathbb P(G_{\phi_j}\ge g)
+    \ \stackrel{\text{(Eq.~\ref{eq:phii-ge-phij})}}{\iff}\  \phi_i \ge \phi_j,
+\end{align}
+concluding the proof.
+
+
+\section{Details on the Computation of the SNS Likelihood}\label{a:trapezoid}
+
+In this appendix, we provide all the steps to obtain the rewriting of the likelihood on an SNS sample introduced in Equation~\eqref{eq:sns-score-rewriting}. The derivations provided here follow from the results of~\citet{kool2020estimating}. 
+\begin{multline*}
+    \begin{aligned}
+    \ptheta(S_K|i) &=\mathbb{P}\left(\min_{i\in S_K} G_{\phi_i} > \max_{i\in {\sensorset\setminus S_k}} G_{\phi_i}\right)\\
+    &=\mathbb{P}\left(\min_{i\in S_K} G_{\phi_i} > G_{\phi_{\sensorset\setminus S_k}}\right)\\
+    &= \mathbb{P}\left(G_{\phi_i} > G_{\phi_{\sensorset \setminus S_k}}, \forall i \in S_K\right)\\
+    &= \int_{-\infty}^{\infty} \pdff_{\phi_{\sensorset \setminus S_k}}(g) \mathbb{P}\left(G_{\phi_i} > g, \forall i \in S_K\right)\,d g\\
+    &= \int_{-\infty}^{\infty} \prod_{i\in S_K}\left(1 - \cdff_{\phi_i}\left(g\right)\right)\pdff_{\phi_{\sensorset \setminus S_k}}(g) \,d g \\
+    &= \int_{0}^{1} \prod_{i\in S_K} \left(1 - \cdff_{\phi_i}\left(\cdff^{-1}_{\phi_{\sensorset\setminus S_k}}(v)\right)\right)\,d v \quad {\scriptstyle \Big\{v = \cdff_{\phi_{\sensorset \setminus S_k}}(g)\Big\}}\\
+    &= \int_0^1\prod_{i\in S_k}\Big(1 - v^{\exp(\phi_i-\phi_{\sensorset\setminus S_K})}\Big)\,d v\\
+    &= \exp\left( b\right)\int_0^1 u^{\exp\left(b\right) - 1}\prod_{i\in S_k}\left(1 - u^{\exp(\phi_i  - \phi_{\sensorset \setminus S_k} +  b)}\right)\,du \quad {\scriptstyle \Big\{u = v^{\exp{\left(-b\right)}}\Big\}}\\
+    &= \exp\left( \phi_{\sensorset \setminus S_K} + c\right)\int_0^1 u^{\exp\left(\phi_{\sensorset \setminus S_K} + c\right) - 1}\prod_{i\in S_k}\left(1 - u^{\exp(\phi_i + c)}\right)\,du \quad {\scriptstyle \Big\{c = b - \phi_{\sensorset \setminus S_K}\Big\}},
+    \end{aligned}
+\end{multline*}
+which corresponds to the desired rewriting.
+
+\section{Experiments Details}\label{a:exp}
+
+All the code for the experiments has been developed in Python using the following open-source libraries:
+\begin{itemize}
+    \item PyTorch~\citep{paske2019pytorch};
+    \item PyTorch Geometric~\citep{fey2019fast};
+    \item Torch Spatiotemporal~\citep{Cini_Torch_Spatiotemporal_2022};
+    \item PyTorch Lightning~\citep{Falcon_PyTorch_Lightning_2019};
+    \item numpy~\citep{harris2020array};
+\end{itemize}
+furthermore, we relied on Neptune\footnote{\url{https://neptune.ai/}}~\citep{neptune2021neptune} for logging experiments. For GTS, we used the code provided by the authors\footnote{\url{https://github.com/chaoshangcs/GTS}} to obtain the results shown in the table, however we fixed a bug in the performance evaluation present in the official implementation\footnote{\url{https://github.com/chaoshangcs/GTS/issues/19}}.
+
+Experiments were run on a cluster equipped with Nvidia Titan V and GTX 1080 GPUs. The code to reproduce the experiments of the paper is available online\footnote{\url{https://github.com/andreacini/sparse-graph-learning}}. 
+
+\subsection{Synthetic Experiments}
+
+For the graph identification experiments, we simply trained the different graph identification modules using the Adam optimizer with a learning rate of $0.05$ to minimize the absolute error. For the joint graph identification and forecasting experiment, we train on the generated dataset a GPVAR filter with $L=3$ and $Q=4$ with parameters randomly initialized and fitted with Adam using the same learning rate for the parameters of both graph filter and graph generator. To avoid numeric instability, scores $\Phi$ were soft-clipped to the interval $(-5, 5)$ by using the $tanh$ function.
+
+\subsection{AQI Experiment} 
+
+For the experiments on AQI we use a simple TTS model with a GRU encoder with $2$ hidden layers, followed by a GNN decoder with $2$ graph convolutional layers updating representations as:
+\begin{equation}
+    \mZ^{(l)} = \sigma\left(\mD^{-1} \gso \mZ^{(l-1)}\mW + \mV \mZ^{(l-1)}\right)
+\end{equation}
+where $\mW,\mV \in \sR^{d_z \times d_z}$ are learnable weight matrices and $\sigma$ is a nonlinear activation function (in particular we use Swish~\citep{ramachandran2017searching}). All layers have a hidden size of $64$ units. We use an input window size of $24$ steps and train for $100$ epochs the models with the Adam optimizer with an initial learning rate of $0.005$ and a multi-step learning rate scheduler. For the GRU baseline, we use a single recurrent layer of size $64$ followed by an MLP decoder with $1$ hidden layer with $32$ units. For the graph module, we use SNS with $K=5$ and $4$ dummy nodes and train with Adam with a learning rate of $0.01$ for $200$ epochs. At test time, we used models with weights corresponding to the lowest validation error across epochs.
+
+\subsection{Traffic Experiment} 
+
+As reported in the paper, we use the same architecture and hyperparameters of the full graph model of~\citet{satorras2022multivariate}, except for the gating mechanism which was removed for the graph-based baselines. We train the models for a maximum of $200$ epochs with Adam and an initial learning rate of $0.003$ and a multi-step scheduler (analogously to~\citet{satorras2022multivariate}. Note that we used an initial learning rate lower than the one used in~\citep{satorras2022multivariate} as we observed it was on average leading to better performance. 
+In each epoch, we used $200$ mini-batches of size $64$ for all the model variations, except for the full-attention model for which --on PEMS-BAY-- we had to limit the batch size to $16$ due to GPU memory limitations. For the graph learning module, we used SNS with $K=30$ and $10$ dummy nodes. We also used a temperature $\tau=0.5$ to make the sampler more deterministic. During evaluation, we used the $\gsofr$ to obtain test-time predictions.

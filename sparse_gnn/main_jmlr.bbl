@@ -1,0 +1,563 @@
+\begin{thebibliography}{80}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abadi et~al.(2015)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and
+  Zheng]{abadi2015tensorflow}
+M.~Abadi, A.~Agarwal, P.~Barham, E.~Brevdo, Z.~Chen, C.~Citro, G.~S. Corrado,
+  A.~Davis, J.~Dean, M.~Devin, S.~Ghemawat, I.~Goodfellow, A.~Harp, G.~Irving,
+  M.~Isard, Y.~Jia, R.~Jozefowicz, L.~Kaiser, M.~Kudlur, J.~Levenberg,
+  D.~Man\'{e}, R.~Monga, S.~Moore, D.~Murray, C.~Olah, M.~Schuster, J.~Shlens,
+  B.~Steiner, I.~Sutskever, K.~Talwar, P.~Tucker, V.~Vanhoucke, V.~Vasudevan,
+  F.~Vi\'{e}gas, O.~Vinyals, P.~Warden, M.~Wattenberg, M.~Wicke, Y.~Yu, and
+  X.~Zheng.
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
+  2015.
+\newblock URL \url{https://www.tensorflow.org/}.
+\newblock Software available from tensorflow.org.
+
+\bibitem[Bacciu et~al.(2020)Bacciu, Errica, Micheli, and
+  Podda]{bacciu2020gentle}
+D.~Bacciu, F.~Errica, A.~Micheli, and M.~Podda.
+\newblock A gentle introduction to deep learning for graphs.
+\newblock \emph{Neural Networks}, 129:\penalty0 203--221, 2020.
+
+\bibitem[Bai et~al.(2020)Bai, Yao, Li, Wang, and Wang]{bai2020adaptive}
+L.~Bai, L.~Yao, C.~Li, X.~Wang, and C.~Wang.
+\newblock Adaptive graph convolutional recurrent network for traffic
+  forecasting.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 17804--17815, 2020.
+
+\bibitem[Bengio et~al.(2013)Bengio, L{\'e}onard, and
+  Courville]{bengio2013estimating}
+Y.~Bengio, N.~L{\'e}onard, and A.~Courville.
+\newblock Estimating or propagating gradients through stochastic neurons for
+  conditional computation.
+\newblock \emph{arXiv preprint arXiv:1308.3432}, 2013.
+
+\bibitem[Bingham et~al.(2019)Bingham, Chen, Jankowiak, Obermeyer, Pradhan,
+  Karaletsos, Singh, Szerlip, Horsfall, and Goodman]{bingham2019pyro}
+E.~Bingham, J.~P. Chen, M.~Jankowiak, F.~Obermeyer, N.~Pradhan, T.~Karaletsos,
+  R.~Singh, P.~A. Szerlip, P.~Horsfall, and N.~D. Goodman.
+\newblock Pyro: Deep universal probabilistic programming.
+\newblock \emph{J. Mach. Learn. Res.}, 20:\penalty0 28:1--28:6, 2019.
+\newblock URL \url{http://jmlr.org/papers/v20/18-403.html}.
+
+\bibitem[Bronstein et~al.(2017)Bronstein, Bruna, LeCun, Szlam, and
+  Vandergheynst]{bronstein2017geometric}
+M.~M. Bronstein, J.~Bruna, Y.~LeCun, A.~Szlam, and P.~Vandergheynst.
+\newblock Geometric deep learning: going beyond {E}uclidean data.
+\newblock \emph{IEEE Signal Processing Magazine}, 34\penalty0 (4):\penalty0
+  18--42, 2017.
+
+\bibitem[Bronstein et~al.(2021)Bronstein, Bruna, Cohen, and
+  Veli{\v{c}}kovi{\'c}]{bronstein2021geometric}
+M.~M. Bronstein, J.~Bruna, T.~Cohen, and P.~Veli{\v{c}}kovi{\'c}.
+\newblock Geometric deep learning: Grids, groups, graphs, geodesics, and
+  gauges.
+\newblock \emph{arXiv preprint arXiv:2104.13478}, 2021.
+
+\bibitem[Bruna et~al.(2014)Bruna, Zaremba, Szlam, and LeCun]{bruna2014spectral}
+J.~Bruna, W.~Zaremba, A.~Szlam, and Y.~LeCun.
+\newblock Spectral networks and deep locally connected networks on graphs.
+\newblock In \emph{2nd International Conference on Learning Representations,
+  ICLR 2014}, 2014.
+
+\bibitem[Chung et~al.(2014)Chung, Gulcehre, Cho, and
+  Bengio]{chung2014empirical}
+J.~Chung, C.~Gulcehre, K.~Cho, and Y.~Bengio.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence
+  modeling.
+\newblock \emph{arXiv preprint arXiv:1412.3555}, 2014.
+
+\bibitem[Cini and Marisca(2022)]{Cini_Torch_Spatiotemporal_2022}
+A.~Cini and I.~Marisca.
+\newblock {Torch Spatiotemporal}, 3 2022.
+\newblock URL \url{https://github.com/TorchSpatiotemporal/tsl}.
+
+\bibitem[Cini et~al.(2022)Cini, Marisca, and Alippi]{cini2022filling}
+A.~Cini, I.~Marisca, and C.~Alippi.
+\newblock Filling the g\_ap\_s: Multivariate time series imputation by graph
+  neural networks.
+\newblock In \emph{International Conference on Learning Representations}, 2022.
+
+\bibitem[Correia et~al.(2020)Correia, Niculae, Aziz, and
+  Martins]{correia2020efficient}
+G.~Correia, V.~Niculae, W.~Aziz, and A.~Martins.
+\newblock Efficient marginalization of discrete and structured latent variables
+  via sparsity.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 11789--11802, 2020.
+
+\bibitem[Deng and Hooi(2021)]{deng2021graph}
+A.~Deng and B.~Hooi.
+\newblock Graph neural network-based anomaly detection in multivariate time
+  series.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~35, pages 4027--4035, 2021.
+
+\bibitem[Di~Lorenzo et~al.(2018)Di~Lorenzo, Banelli, Isufi, Barbarossa, and
+  Leus]{di2018adaptive}
+P.~Di~Lorenzo, P.~Banelli, E.~Isufi, S.~Barbarossa, and G.~Leus.
+\newblock Adaptive graph signal processing: Algorithms and optimal sampling
+  strategies.
+\newblock \emph{IEEE Transactions on Signal Processing}, 66\penalty0
+  (13):\penalty0 3584--3598, 2018.
+
+\bibitem[Dillon et~al.(2017)Dillon, Langmore, Tran, Brevdo, Vasudevan, Moore,
+  Patton, Alemi, Hoffman, and Saurous]{dillon2017tensorflow}
+J.~V. Dillon, I.~Langmore, D.~Tran, E.~Brevdo, S.~Vasudevan, D.~Moore,
+  B.~Patton, A.~Alemi, M.~Hoffman, and R.~A. Saurous.
+\newblock Tensorflow distributions.
+\newblock \emph{arXiv preprint arXiv:1711.10604}, 2017.
+
+\bibitem[Falcon and {The PyTorch Lightning
+  team}(2019)]{Falcon_PyTorch_Lightning_2019}
+W.~Falcon and {The PyTorch Lightning team}.
+\newblock {PyTorch Lightning}, 3 2019.
+\newblock URL \url{https://github.com/PyTorchLightning/pytorch-lightning}.
+
+\bibitem[Fey and Lenssen(2019)]{fey2019fast}
+M.~Fey and J.~E. Lenssen.
+\newblock Fast graph representation learning with pytorch geometric.
+\newblock \emph{arXiv preprint arXiv:1903.02428}, 2019.
+
+\bibitem[Foerster et~al.(2018)Foerster, Farquhar, Al-Shedivat, Rockt{\"a}schel,
+  Xing, and Whiteson]{foerster2018dice}
+J.~Foerster, G.~Farquhar, M.~Al-Shedivat, T.~Rockt{\"a}schel, E.~Xing, and
+  S.~Whiteson.
+\newblock Dice: The infinitely differentiable monte carlo estimator.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  1529--1538. PMLR, 2018.
+
+\bibitem[Franceschi et~al.(2019)Franceschi, Niepert, Pontil, and
+  He]{franceschi2019learning}
+L.~Franceschi, M.~Niepert, M.~Pontil, and X.~He.
+\newblock Learning discrete structures for graph neural networks.
+\newblock In \emph{International conference on machine learning}, pages
+  1972--1982. PMLR, 2019.
+
+\bibitem[Fr{\'e}chet(1948)]{frechet1948elements}
+M.~Fr{\'e}chet.
+\newblock Les {\'e}l{\'e}ments al{\'e}atoires de nature quelconque dans un
+  espace distanci{\'e}.
+\newblock In \emph{Annales de l'institut Henri Poincar{\'e}}, volume~10, pages
+  215--310, 1948.
+
+\bibitem[Gao and Ribeiro(2022)]{gao2021equivalence}
+J.~Gao and B.~Ribeiro.
+\newblock On the equivalence between temporal and static equivariant graph
+  representations.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  7052--7076. PMLR, 2022.
+
+\bibitem[Gilmer et~al.(2017)Gilmer, Schoenholz, Riley, Vinyals, and
+  Dahl]{gilmer2017neural}
+J.~Gilmer, S.~S. Schoenholz, P.~F. Riley, O.~Vinyals, and G.~E. Dahl.
+\newblock Neural message passing for quantum chemistry.
+\newblock In \emph{International conference on machine learning}, pages
+  1263--1272. PMLR, 2017.
+
+\bibitem[Glasserman and Ho(1991)]{glasserman1991gradient}
+P.~Glasserman and Y.-C. Ho.
+\newblock \emph{Gradient estimation via perturbation analysis}, volume 116.
+\newblock Springer Science \& Business Media, 1991.
+
+\bibitem[Grathwohl et~al.(2018)Grathwohl, Choi, Wu, Roeder, and
+  Duvenaud]{grathwohl2018backpropagation}
+W.~Grathwohl, D.~Choi, Y.~Wu, G.~Roeder, and D.~Duvenaud.
+\newblock Backpropagation through the void: Optimizing control variates for
+  black-box gradient estimation.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+
+\bibitem[Harris et~al.(2020)Harris, Millman, Van Der~Walt, Gommers, Virtanen,
+  Cournapeau, Wieser, Taylor, Berg, Smith, et~al.]{harris2020array}
+C.~R. Harris, K.~J. Millman, S.~J. Van Der~Walt, R.~Gommers, P.~Virtanen,
+  D.~Cournapeau, E.~Wieser, J.~Taylor, S.~Berg, N.~J. Smith, et~al.
+\newblock Array programming with numpy.
+\newblock \emph{Nature}, 585\penalty0 (7825):\penalty0 357--362, 2020.
+
+\bibitem[Harvey et~al.(1990)]{harvey1990forecasting}
+A.~C. Harvey et~al.
+\newblock Forecasting, structural time series models and the {K}alman filter.
+\newblock \emph{Cambridge Books}, 1990.
+
+\bibitem[Huijben et~al.(2022)Huijben, Kool, Paulus, and
+  Van~Sloun]{huijben2022review}
+I.~A. Huijben, W.~Kool, M.~B. Paulus, and R.~J. Van~Sloun.
+\newblock A review of the gumbel-max trick and its extensions for discrete
+  stochasticity in machine learning.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 2022.
+
+\bibitem[Isufi et~al.(2019)Isufi, Loukas, Perraudin, and
+  Leus]{isufi2019forecasting}
+E.~Isufi, A.~Loukas, N.~Perraudin, and G.~Leus.
+\newblock Forecasting time series with {VARMA} recursions on graphs.
+\newblock \emph{IEEE Transactions on Signal Processing}, 67\penalty0
+  (18):\penalty0 4870--4885, 2019.
+
+\bibitem[Jagadish et~al.(2014)Jagadish, Gehrke, Labrinidis, Papakonstantinou,
+  Patel, Ramakrishnan, and Shahabi]{jagadish2014big}
+H.~V. Jagadish, J.~Gehrke, A.~Labrinidis, Y.~Papakonstantinou, J.~M. Patel,
+  R.~Ramakrishnan, and C.~Shahabi.
+\newblock Big data and its technical challenges.
+\newblock \emph{Communications of the ACM}, 57\penalty0 (7):\penalty0 86--94,
+  2014.
+
+\bibitem[Jain(2016)]{jain2016statistical}
+B.~J. Jain.
+\newblock Statistical graph space analysis.
+\newblock \emph{Pattern Recognition}, 60:\penalty0 802--812, 2016.
+
+\bibitem[Jang et~al.(2017)Jang, Gu, and Poole]{jang2017categorical}
+E.~Jang, S.~Gu, and B.~Poole.
+\newblock Categorical reparameterization with gumbel-softmax.
+\newblock 2017.
+
+\bibitem[Kazi et~al.(2022)Kazi, Cosmo, Ahmadi, Navab, and
+  Bronstein]{kazi2022differentiable}
+A.~Kazi, L.~Cosmo, S.-A. Ahmadi, N.~Navab, and M.~Bronstein.
+\newblock Differentiable graph module (dgm) for graph convolutional networks.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 2022.
+
+\bibitem[Kingma and Welling(2013)]{kingma2014auto}
+D.~P. Kingma and M.~Welling.
+\newblock Auto-encoding variational bayes.
+\newblock In \emph{Proceedings of International Conference on Learning
+  Representations}, 2013.
+
+\bibitem[Kipf et~al.(2018)Kipf, Fetaya, Wang, Welling, and
+  Zemel]{kipf2018neural}
+T.~Kipf, E.~Fetaya, K.-C. Wang, M.~Welling, and R.~Zemel.
+\newblock Neural relational inference for interacting systems.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  2688--2697. PMLR, 2018.
+
+\bibitem[Kipf and Welling(2016)]{kipf2016variational}
+T.~N. Kipf and M.~Welling.
+\newblock Variational graph auto-encoders.
+\newblock \emph{arXiv preprint arXiv:1611.07308}, 2016.
+
+\bibitem[Kool et~al.(2019)Kool, Van~Hoof, and Welling]{kool2019stochastic}
+W.~Kool, H.~Van~Hoof, and M.~Welling.
+\newblock Stochastic beams and where to find them: The gumbel-top-k trick for
+  sampling sequences without replacement.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  3499--3508. PMLR, 2019.
+
+\bibitem[Kool et~al.(2020)Kool, van Hoof, and Welling]{kool2020estimating}
+W.~Kool, H.~van Hoof, and M.~Welling.
+\newblock Estimating gradients for discrete random variables by sampling
+  without replacement.
+\newblock In \emph{International Conference on Learning Representations}, 2020.
+\newblock URL \url{https://openreview.net/forum?id=rklEj2EFvB}.
+
+\bibitem[L'Ecuyer(1995)]{l1995note}
+P.~L'Ecuyer.
+\newblock Note: On the interchange of derivative and expectation for likelihood
+  ratio derivative estimators.
+\newblock \emph{Management Science}, 41\penalty0 (4):\penalty0 738--747, 1995.
+
+\bibitem[Li et~al.(2018)Li, Yu, Shahabi, and Liu]{li2018diffusion}
+Y.~Li, R.~Yu, C.~Shahabi, and Y.~Liu.
+\newblock Diffusion convolutional recurrent neural network: Data-driven traffic
+  forecasting.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+
+\bibitem[Maddison et~al.(2017)Maddison, Mnih, and Teh]{maddison2017concrete}
+C.~Maddison, A.~Mnih, and Y.~Teh.
+\newblock The concrete distribution: A continuous relaxation of discrete random
+  variables.
+\newblock In \emph{International Conference on Learning Representations}, 2017.
+
+\bibitem[Marisca et~al.(2022)Marisca, Cini, and Alippi]{marisca2022learning}
+I.~Marisca, A.~Cini, and C.~Alippi.
+\newblock Learning to reconstruct missing data from spatiotemporal graphs with
+  sparse observations.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  35:\penalty0 32069--32082, 2022.
+
+\bibitem[Mei and Moura(2016)]{mei2016signal}
+J.~Mei and J.~M. Moura.
+\newblock Signal processing on graphs: Causal modeling of unstructured data.
+\newblock \emph{IEEE Transactions on Signal Processing}, 65\penalty0
+  (8):\penalty0 2077--2092, 2016.
+
+\bibitem[Minervini et~al.(2023)Minervini, Franceschi, and
+  Niepert]{minervini2023adaptive}
+P.~Minervini, L.~Franceschi, and M.~Niepert.
+\newblock Adaptive perturbation-based gradient estimation for discrete latent
+  variable models.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~37, pages 9200--9208, 2023.
+
+\bibitem[Mnih and Gregor(2014)]{mnih2014neural}
+A.~Mnih and K.~Gregor.
+\newblock Neural variational inference and learning in belief networks.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  1791--1799. PMLR, 2014.
+
+\bibitem[Mnih et~al.(2016)Mnih, Badia, Mirza, Graves, Lillicrap, Harley,
+  Silver, and Kavukcuoglu]{mnih2016asynchronous}
+V.~Mnih, A.~P. Badia, M.~Mirza, A.~Graves, T.~Lillicrap, T.~Harley, D.~Silver,
+  and K.~Kavukcuoglu.
+\newblock Asynchronous methods for deep reinforcement rearning.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  1928--1937. PMLR, 2016.
+
+\bibitem[Mohamed et~al.(2020)Mohamed, Rosca, Figurnov, and
+  Mnih]{mohamed2020monte}
+S.~Mohamed, M.~Rosca, M.~Figurnov, and A.~Mnih.
+\newblock Monte carlo gradient estimation in machine learning.
+\newblock \emph{J. Mach. Learn. Res.}, 21\penalty0 (132):\penalty0 1--62, 2020.
+
+\bibitem[{neptune.ai}(2021)]{neptune2021neptune}
+{neptune.ai}.
+\newblock Neptune: Metadata store for mlops, built for research and production
+  teams that run a lot of experiments, 2021.
+\newblock URL \url{https://neptune.ai}.
+
+\bibitem[Niculae et~al.(2023)Niculae, Corro, Nangia, Mihaylova, and
+  Martins]{niculae2023discrete}
+V.~Niculae, C.~F. Corro, N.~Nangia, T.~Mihaylova, and A.~F. Martins.
+\newblock Discrete latent structure in neural networks.
+\newblock \emph{arXiv preprint arXiv:2301.07473}, 2023.
+
+\bibitem[Niepert et~al.(2021)Niepert, Minervini, and
+  Franceschi]{niepert2021implicit}
+M.~Niepert, P.~Minervini, and L.~Franceschi.
+\newblock Implicit mle: backpropagating through discrete exponential family
+  distributions.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  34:\penalty0 14567--14579, 2021.
+
+\bibitem[Oreshkin et~al.(2021)Oreshkin, Amini, Coyle, and
+  Coates]{oreshkin2020fcgaga}
+B.~N. Oreshkin, A.~Amini, L.~Coyle, and M.~J. Coates.
+\newblock {FC-GAGA}: Fully connected gated graph architecture for
+  spatio-temporal traffic forecasting.
+\newblock In \emph{AAAI}, 2021.
+
+\bibitem[Ortega et~al.(2018)Ortega, Frossard, Kova{\v{c}}evi{\'c}, Moura, and
+  Vandergheynst]{ortega2018graph}
+A.~Ortega, P.~Frossard, J.~Kova{\v{c}}evi{\'c}, J.~M. Moura, and
+  P.~Vandergheynst.
+\newblock Graph signal processing: Overview, challenges, and applications.
+\newblock \emph{Proceedings of the IEEE}, 106\penalty0 (5):\penalty0 808--828,
+  2018.
+
+\bibitem[Paszke et~al.(2019)Paszke, Gross, Massa, Lerer, Bradbury, Chanan,
+  Killeen, Lin, Gimelshein, Antiga, Desmaison, Kopf, Yang, DeVito, Raison,
+  Tejani, Chilamkurthy, Steiner, Fang, Bai, and Chintala]{paske2019pytorch}
+A.~Paszke, S.~Gross, F.~Massa, A.~Lerer, J.~Bradbury, G.~Chanan, T.~Killeen,
+  Z.~Lin, N.~Gimelshein, L.~Antiga, A.~Desmaison, A.~Kopf, E.~Yang, Z.~DeVito,
+  M.~Raison, A.~Tejani, S.~Chilamkurthy, B.~Steiner, L.~Fang, J.~Bai, and
+  S.~Chintala.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock In \emph{Advances in Neural Information Processing Systems 32}. 2019.
+
+\bibitem[Paulus et~al.(2020)Paulus, Choi, Tarlow, Krause, and
+  Maddison]{paulus2020gradient}
+M.~Paulus, D.~Choi, D.~Tarlow, A.~Krause, and C.~J. Maddison.
+\newblock Gradient estimation with stochastic softmax tricks.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  33:\penalty0 5691--5704, 2020.
+
+\bibitem[Ramachandran et~al.(2017)Ramachandran, Zoph, and
+  Le]{ramachandran2017searching}
+P.~Ramachandran, B.~Zoph, and Q.~V. Le.
+\newblock Searching for activation functions.
+\newblock \emph{arXiv preprint arXiv:1710.05941}, 2017.
+
+\bibitem[Ramp{\'a}{\v{s}}ek et~al.(2022)Ramp{\'a}{\v{s}}ek, Galkin, Dwivedi,
+  Luu, Wolf, and Beaini]{rampavsek2022recipe}
+L.~Ramp{\'a}{\v{s}}ek, M.~Galkin, V.~P. Dwivedi, A.~T. Luu, G.~Wolf, and
+  D.~Beaini.
+\newblock Recipe for a general, powerful, scalable graph transformer.
+\newblock \emph{arXiv preprint arXiv:2205.12454}, 2022.
+
+\bibitem[Rennie et~al.(2017)Rennie, Marcheret, Mroueh, Ross, and
+  Goel]{rennie2017self}
+S.~J. Rennie, E.~Marcheret, Y.~Mroueh, J.~Ross, and V.~Goel.
+\newblock Self-critical sequence training for image captioning.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, pages 7008--7024, 2017.
+
+\bibitem[Rubinstein(1969)]{rubinstein1969some}
+R.~Y. Rubinstein.
+\newblock \emph{Some problems in {M}onte {C}arlo optimization}.
+\newblock PhD thesis, University of Riga, 1969.
+
+\bibitem[Satorras et~al.(2022)Satorras, Rangapuram, and
+  Januschowski]{satorras2022multivariate}
+V.~G. Satorras, S.~S. Rangapuram, and T.~Januschowski.
+\newblock Multivariate time series forecasting with latent graph inference.
+\newblock \emph{arXiv preprint arXiv:2203.03423}, 2022.
+
+\bibitem[Scarselli et~al.(2008)Scarselli, Gori, Tsoi, Hagenbuchner, and
+  Monfardini]{scarselli2008graph}
+F.~Scarselli, M.~Gori, A.~C. Tsoi, M.~Hagenbuchner, and G.~Monfardini.
+\newblock The graph neural network model.
+\newblock \emph{IEEE transactions on neural networks}, 20\penalty0
+  (1):\penalty0 61--80, 2008.
+
+\bibitem[Schlichtkrull et~al.(2018)Schlichtkrull, Kipf, Bloem, Berg, Titov, and
+  Welling]{schlichtkrull2018modeling}
+M.~Schlichtkrull, T.~N. Kipf, P.~Bloem, R.~v.~d. Berg, I.~Titov, and
+  M.~Welling.
+\newblock Modeling relational data with graph convolutional networks.
+\newblock In \emph{European semantic web conference}, pages 593--607. Springer,
+  2018.
+
+\bibitem[Schulman et~al.(2015)Schulman, Heess, Weber, and
+  Abbeel]{schulman2015gradient}
+J.~Schulman, N.~Heess, T.~Weber, and P.~Abbeel.
+\newblock Gradient estimation using stochastic computation graphs.
+\newblock \emph{Advances in Neural Information Processing Systems}, 28, 2015.
+
+\bibitem[Seo et~al.(2018)Seo, Defferrard, Vandergheynst, and
+  Bresson]{seo2018structured}
+Y.~Seo, M.~Defferrard, P.~Vandergheynst, and X.~Bresson.
+\newblock Structured sequence modeling with graph convolutional recurrent
+  networks.
+\newblock In \emph{International Conference on Neural Information Processing},
+  pages 362--373. Springer, 2018.
+
+\bibitem[Shang and Chen(2021)]{shang2021discrete}
+C.~Shang and J.~Chen.
+\newblock Discrete graph structure learning for forecasting multiple time
+  series.
+\newblock In \emph{Proceedings of International Conference on Learning
+  Representations}, 2021.
+
+\bibitem[Stankovi{\'c} et~al.(2020)Stankovi{\'c}, Mandic, Dakovi{\'c},
+  Brajovi{\'c}, Scalzo, Li, Constantinides, et~al.]{stankovic2020graph2}
+L.~Stankovi{\'c}, D.~Mandic, M.~Dakovi{\'c}, M.~Brajovi{\'c}, B.~Scalzo, S.~Li,
+  A.~G. Constantinides, et~al.
+\newblock Data analytics on graphs part iii: Machine learning on graphs, from
+  graph topology to applications.
+\newblock \emph{Foundations and Trends{\textregistered} in Machine Learning},
+  13\penalty0 (4):\penalty0 332--530, 2020.
+
+\bibitem[Sutton et~al.(1999)Sutton, McAllester, Singh, and
+  Mansour]{sutton1999policy}
+R.~S. Sutton, D.~McAllester, S.~Singh, and Y.~Mansour.
+\newblock Policy gradient methods for reinforcement learning with function
+  approximation.
+\newblock \emph{Advances in Neural Information Processing Systems}, 12, 1999.
+
+\bibitem[Tucker et~al.(2017)Tucker, Mnih, Maddison, Lawson, and
+  Sohl-Dickstein]{tucker2017rebar}
+G.~Tucker, A.~Mnih, C.~J. Maddison, J.~Lawson, and J.~Sohl-Dickstein.
+\newblock Rebar: Low-variance, unbiased gradient estimates for discrete latent
+  variable models.
+\newblock \emph{Advances in Neural Information Processing Systems}, 30, 2017.
+
+\bibitem[van Krieken et~al.(2021)van Krieken, Tomczak, and
+  Teije]{krieken2021storchastic}
+E.~van Krieken, J.~M. Tomczak, and A.~T. Teije.
+\newblock Storchastic: A framework for general stochastic automatic
+  differentiation.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2021.
+\newblock URL \url{https://openreview.net/forum?id=KAFyFabsK88}.
+
+\bibitem[Variddhisai and Mandic(2020)]{variddhisai2020methods}
+T.~Variddhisai and D.~Mandic.
+\newblock Methods of adaptive signal processing on graphs using vertex-time
+  autoregressive models.
+\newblock \emph{arXiv preprint arXiv:2003.05729}, 2020.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Veli{\v{c}}kovi{\'c} et~al.(2018)Veli{\v{c}}kovi{\'c}, Cucurull,
+  Casanova, Romero, Li{\`o}, and Bengio]{velivckovic2018graph}
+P.~Veli{\v{c}}kovi{\'c}, G.~Cucurull, A.~Casanova, A.~Romero, P.~Li{\`o}, and
+  Y.~Bengio.
+\newblock Graph attention networks.
+\newblock In \emph{International Conference on Learning Representations}, 2018.
+
+\bibitem[Weber et~al.(2019)Weber, Heess, Buesing, and Silver]{weber2019credit}
+T.~Weber, N.~Heess, L.~Buesing, and D.~Silver.
+\newblock Credit assignment techniques in stochastic computation graphs.
+\newblock In \emph{The 22nd International Conference on Artificial Intelligence
+  and Statistics}, pages 2650--2660. PMLR, 2019.
+
+\bibitem[Williams(1992)]{williams1992simple}
+R.~J. Williams.
+\newblock Simple statistical gradient-following algorithms for connectionist
+  reinforcement learning.
+\newblock \emph{Machine learning}, 8\penalty0 (3):\penalty0 229--256, 1992.
+
+\bibitem[Wu et~al.(2019)Wu, Pan, Long, Jiang, and Zhang]{wu2019graph}
+Z.~Wu, S.~Pan, G.~Long, J.~Jiang, and C.~Zhang.
+\newblock Graph wavenet for deep spatial-temporal graph modeling.
+\newblock In \emph{Proceedings of the 28th International Joint Conference on
+  Artificial Intelligence}, pages 1907--1913, 2019.
+
+\bibitem[Wu et~al.(2020)Wu, Pan, Long, Jiang, Chang, and
+  Zhang]{wu2020connecting}
+Z.~Wu, S.~Pan, G.~Long, J.~Jiang, X.~Chang, and C.~Zhang.
+\newblock Connecting the dots: Multivariate time series forecasting with graph
+  neural networks.
+\newblock In \emph{Proceedings of the 26th ACM SIGKDD International Conference
+  on Knowledge Discovery \& Data Mining}, pages 753--763, 2020.
+
+\bibitem[Wu et~al.(2022)Wu, Zheng, Pan, Gan, Long, and
+  Karypis]{wu2021traversenet}
+Z.~Wu, D.~Zheng, S.~Pan, Q.~Gan, G.~Long, and G.~Karypis.
+\newblock Traversenet: Unifying space and time in message passing for traffic
+  forecasting.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  2022.
+
+\bibitem[Yi et~al.(2016)Yi, Zheng, Zhang, and Li]{yi2016st}
+X.~Yi, Y.~Zheng, J.~Zhang, and T.~Li.
+\newblock St-mvl: filling missing values in geo-sensory time series data.
+\newblock In \emph{Proceedings of the 25th International Joint Conference on
+  Artificial Intelligence}, 2016.
+
+\bibitem[Yu et~al.(2018)Yu, Yin, and Zhu]{yu2018spatio}
+B.~Yu, H.~Yin, and Z.~Zhu.
+\newblock Spatio-temporal graph convolutional networks: a deep learning
+  framework for traffic forecasting.
+\newblock In \emph{Proceedings of the 27th International Joint Conference on
+  Artificial Intelligence}, pages 3634--3640, 2018.
+
+\bibitem[Zambon and Alippi(2022)]{zambon2022az}
+D.~Zambon and C.~Alippi.
+\newblock Az-whiteness test: a test for uncorrelated noise on spatio-temporal
+  graphs.
+\newblock \emph{To appear in Advances in Neural Information Processing
+  Systems}, 2022.
+
+\bibitem[Zhang et~al.(2022)Zhang, Zeman, Tsiligkaridis, and
+  Zitnik]{zhang2022graph}
+X.~Zhang, M.~Zeman, T.~Tsiligkaridis, and M.~Zitnik.
+\newblock Graph-guided network for irregularly sampled multivariate time
+  series.
+\newblock In \emph{International Conference on Learning Representations, ICLR},
+  2022.
+
+\bibitem[Z{\"u}gner et~al.(2021)Z{\"u}gner, Aubet, Satorras, Januschowski,
+  G{\"u}nnemann, and Gasthaus]{zugner2021study}
+D.~Z{\"u}gner, F.-X. Aubet, V.~G. Satorras, T.~Januschowski, S.~G{\"u}nnemann,
+  and J.~Gasthaus.
+\newblock A study of joint graph inference and forecasting.
+\newblock \emph{arXiv preprint arXiv:2109.04979}, 2021.
+
+\end{thebibliography}
